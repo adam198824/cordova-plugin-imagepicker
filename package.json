@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-imagepicker",
+  "name": "cordova-plugin-adam-imagepicker",
   "version": "1.0.0",
   "description": "Cordova ImagePicker Plugin",
   "cordova": {
-    "id": "cordova-plugin-imagepicker",
+    "id": "cordova-plugin-adam-imagepicker",
     "platforms": [
       "ios",
       "android"
