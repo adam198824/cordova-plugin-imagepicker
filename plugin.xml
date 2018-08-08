@@ -20,7 +20,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
            id="cordova-plugin-imagepicker"
-      version="1.0.0">
+      version="1.0.1">
 
     <name>ImagePicker</name>
     <description>Cordova ImagePicker Plugin</description>
@@ -167,7 +167,6 @@
 
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
-
             <!-- 在SDCard中创建与删除文件权限 -->
             <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
             <!-- 往SDCard写入数据权限 -->
@@ -175,8 +174,7 @@
             <!-- 从SDCard读取数据权限 -->
             <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
             <!-- 相机权限 -->
-            <uses-permission android:name="android.permission.CAMERA"/>
-
+            <uses-permission android:name="android.permission.CAMERA" android:required="false" />
         </config-file>
 
         <!-- 第三方库 和 sourceCompatibility 1.7 用来支持 diamond 运算符  -->
